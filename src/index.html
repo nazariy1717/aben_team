@@ -8,7 +8,6 @@
 
     <title>Main</title>
     <meta name="description" content="">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:500" rel="stylesheet">
     <link href="/src/css/build.css" rel="stylesheet">
     <script src="/src/js/libs/jquery-3.2.1.min.js"></script>
 </head>
@@ -23,9 +22,9 @@
             <h2 class="app-title --center">VIP Service</h2>
             <p class="app-txt text-center --mb">Gain access to thousands of Muskoka properties for sale and stay up-to-date with the newest listings that meet your criteria before they appear on realtor.ca.</p>
 
-            <form action="/" id="app-form" method="post">
+            <form action="/" id="app_form" method="post">
                 <div class="row m-row">
-                    <div class="column col-lg-3 col-md-3">
+                    <div class="column col-lg-3 col-sm-6 col-xs-12">
                         <div class="form__group-15">
                             <label for="type" class="form__label">Property Type</label>
                             <select name="type" id="type" class="form__select">
@@ -34,7 +33,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="column col-lg-3 col-md-3">
+                    <div class="column col-lg-3 col-sm-6 col-xs-12">
                         <div class="form__group-15">
                             <label for="waterfront" class="form__label">Waterfront</label>
                             <select name="waterfront" id="waterfront" class="form__select">
@@ -43,7 +42,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="column col-lg-3 col-md-3">
+                    <div class="column col-lg-3 col-sm-6 col-xs-12">
                         <div class="form__group-15">
                             <label for="location" class="form__label">Location</label>
                             <select name="location" id="location" class="form__select">
@@ -53,21 +52,29 @@
                         </div>
                     </div>
 
-                    <div class="column col-lg-3 col-md-3"></div>
+                    <div class="column col-lg-3 col-sm-6 col-xs-12">
+                        <div class="form__group-15">
+                            <div class="range range__wrap">
+                                <span class="rangeValues form__label" ></span>
+                                <input name="range" value="0" min="0" max="10000000" step="10000" type="range">
+                                <input name="range" value="10000000" min="0" max="10000000" step="10000" type="range">
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="column col-lg-4">
+                    <div class="column col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="form__group-15">
                             <label for="name" class="form__label">Full Name *</label>
                             <input type="text" name="name" id="name" class="form__input" placeholder="Full Name">
                         </div>
                     </div>
-                    <div class="column col-lg-4">
+                    <div class="column col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="form__group-15">
                             <label for="email" class="form__label">Email *</label>
                             <input type="email" name="email" id="email" class="form__input" placeholder="Email">
                         </div>
                     </div>
-                    <div class="column col-lg-4">
+                    <div class="column col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="form__group-15">
                             <label for="phone" class="form__label">Phone</label>
                             <input type="text" name="phone" id="phone" class="form__input" placeholder="Phone">
@@ -132,7 +139,8 @@
 
 
 <script src="/src/js/libs/jquery.validate.js"></script>
-<script src="/src/js/front.js?<?= time() ?>"></script>
+<script src="/src/js/front.js"></script>
+<!--<script src="/src/js/range.js"></script>-->
 
 </body>
 </html>

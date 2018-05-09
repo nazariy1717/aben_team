@@ -14,5 +14,8 @@
     border-radius: 3px;
     background-color: #fafafa;
     border: solid 1px #d6d6d6;
+    @media(max-width: 620px){
+      margin-bottom: 30px;
+    }
   }
 }
