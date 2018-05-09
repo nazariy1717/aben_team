@@ -80,3 +80,44 @@
 }
 
 
+.app-blog{
+  padding: 80px 0 60px 0;
+  &__title{
+    margin-bottom: 40px;
+  }
+}
+
+.app-blog-item{
+  margin-bottom: 30px;
+  &__top{
+    margin-bottom: 20px;
+  }
+  &__bot{}
+  &__image{
+    height: 215px;
+    background-color: var(--col-light-grey);
+  }
+  &__title{
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.13;
+    color: var(--col-black);
+    margin-bottom: 10px;
+  }
+  &__date{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.57;
+    color: var(--col-warm-grey);
+    margin-bottom: 15px;
+  }
+  &__desc{}
+}
+
+
