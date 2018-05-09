@@ -17,7 +17,7 @@ gulp.task('webserver', function() {
     gulp.src('.')
         .pipe(server({
             host: 'localhost',
-            port: '8080',
+            port: '8000',
             livereload: true,
             directoryListing: true,
             open: true

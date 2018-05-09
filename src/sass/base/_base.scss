@@ -18,12 +18,40 @@ a{
 
 
 .app-title{
+  position: relative;
   display: block;
   font-size: 30px;
   line-height: 1.1;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
+  text-transform: uppercase;
   color: var(--col-black);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 2px;
+    background-color: var(--col-battleship-grey);
+  }
+  &.--center{
+    text-align: center;
+    &:after{
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  &.--white{
+    color: #fff;
+    &:after{
+      background-color: #9b9b9b;
+    }
+  }
+
 }
 
 .app-txt{
@@ -59,6 +87,13 @@ a{
   position: relative;
   &.--padding{
     padding: 50px 0;
+  }
+  &.--bg{
+    background-color: var(--col-black);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
 }
 

@@ -1,0 +1,18 @@
+@import "../tools/mixins";
+@import "../tools/breakpoints";
+
+
+.app-form{
+  padding: 60px 0 80px 0;
+  background-color: var(--col-light-grey);
+  &__bottom-column{
+    @include grid-size(300px);
+  }
+  &__captcha{
+    width: 270px;
+    height: 67px;
+    border-radius: 3px;
+    background-color: #fafafa;
+    border: solid 1px #d6d6d6;
+  }
+}
