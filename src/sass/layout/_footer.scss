@@ -1,0 +1,17 @@
+@import "../tools/mixins";
+@import "../tools/breakpoints";
+
+
+.footer{
+  height: 527px;
+  background-color: #222427;
+  padding: 80px 0;
+}
+
+.copyright{
+  height: 80px;
+  background-color: #191a1b;
+  &__txt{
+    line-height: 80px;
+  }
+}
