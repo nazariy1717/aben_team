@@ -22,12 +22,10 @@
         <div class="app-suggest__content">
             <div class="app-suggest__carousel">
 
-
-
                 <div class="app-suggest__column">
                     <div class="suggest-item">
                         <div class="suggest-item__img-wrap">
-                            <div class="suggest-item__img"></div>
+                            <img src="img/woodwinds.png" class="image">
                             <div class="suggest-item__label">EXCLUSIVE</div>
                             <div class="suggest-item__status">SOLD</div>
                             <div class="suggest-item__price">
@@ -35,11 +33,79 @@
                             </div>
                         </div>
                         <div class="suggest-item__content">
-
-                        </div>
-                        <div class="suggest-item__bottom">
                             <span class="suggest-item__name">1078 Woodwinds Road</span>
-                            <span class="suggest-item__location">Port Carling, ON</span>
+                            <span class="suggest-item__location">
+                                <i class="icon-marker"></i>
+                                Port Carling, ON
+                            </span>
+                        </div>
+                        <div class="suggest-item__bottom row align-middle">
+                            <div class="suggest-item__property">
+                                <i class="icon-bathroom"></i>
+                                <span>3</span>
+                            </div>
+                            <div class="suggest-item__property">
+                                <i class="icon-bedroom"></i>
+                                <span>3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-suggest__column">
+                    <div class="suggest-item">
+                        <div class="suggest-item__img-wrap">
+                            <img src="img/gryffin.png" class="image">
+                            <div class="suggest-item__label">FEATURED</div>
+                            <div class="suggest-item__price">
+                                <span>$129,000.00</span>
+                            </div>
+                        </div>
+                        <div class="suggest-item__content">
+                            <span class="suggest-item__name">22 Gryffin Bluffs Lane</span>
+                            <span class="suggest-item__location">
+                                <i class="icon-marker"></i>
+                                Huntsville, ON
+                            </span>
+                        </div>
+                        <div class="suggest-item__bottom row align-middle">
+                            <div class="suggest-item__property">
+                                <i class="icon-bathroom"></i>
+                                <span>1</span>
+                            </div>
+                            <div class="suggest-item__property">
+                                <i class="icon-bedroom"></i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-suggest__column">
+                    <div class="suggest-item">
+                        <div class="suggest-item__img-wrap">
+                            <img src="img/pennwood.png" class="image">
+                            <div class="suggest-item__label">FEATURED</div>
+                            <div class="suggest-item__price">
+                                <span>$2,295,000.00</span>
+                            </div>
+                        </div>
+                        <div class="suggest-item__content">
+                            <span class="suggest-item__name">1086 Pennwood Road #7</span>
+                            <span class="suggest-item__location">
+                                <i class="icon-marker"></i>
+                                Port Carling, ON
+                            </span>
+                        </div>
+                        <div class="suggest-item__bottom row align-middle">
+                            <div class="suggest-item__property">
+                                <i class="icon-bathroom"></i>
+                                <span>3</span>
+                            </div>
+                            <div class="suggest-item__property">
+                                <i class="icon-bedroom"></i>
+                                <span>5</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,56 +211,58 @@
 
 
 <section class="section app-popular --padding-80">
-    <h2 class="app-title --center --white app-popular__title">Search by Most Popular Lakes</h2>
-
-    <div class="container">
-
-        <div class="app-popular__content">
-            <div class="app-popular__carousel">
-                <div class="app-popular__column">
-                    <div class="app-popular__image"></div>
-                    <span class="app-popular__name">Lake Joseph</span>
-                </div>
-                <div class="app-popular__column">
-                    <div class="app-popular__image"></div>
-                    <span class="app-popular__name">Lake Rosseau</span>
-                </div>
-                <div class="app-popular__column">
-                    <div class="app-popular__image"></div>
-                    <span class="app-popular__name">Lake Muskoka</span>
-                </div>
-                <div class="app-popular__column">
-                    <div class="app-popular__image"></div>
-                    <span class="app-popular__name">Skeleton Lake</span>
-                </div>
-                <div class="app-popular__column">
-                    <div class="app-popular__image"></div>
-                    <span class="app-popular__name">Fairy Lake</span>
-                </div>
-                <div class="app-popular__column">
-                    <div class="app-popular__image"></div>
-                    <span class="app-popular__name">Lake Joseph</span>
-                </div>
-                <div class="app-popular__column">
-                    <div class="app-popular__image"></div>
-                    <span class="app-popular__name">Lake Rosseau</span>
-                </div>
-                <div class="app-popular__column">
-                    <div class="app-popular__image"></div>
-                    <span class="app-popular__name">Lake Muskoka</span>
-                </div>
-                <div class="app-popular__column">
-                    <div class="app-popular__image"></div>
-                    <span class="app-popular__name">Skeleton Lake</span>
-                </div>
-                <div class="app-popular__column">
-                    <div class="app-popular__image"></div>
-                    <span class="app-popular__name">Fairy Lake</span>
+    <div class="app-popular__overlay"></div>
+    <div class="app-popular__wrap">
+        <h2 class="app-title --center --white app-popular__title">Search by Most Popular Lakes</h2>
+        <div class="container">
+            <div class="app-popular__content">
+                <div class="app-popular__carousel">
+                    <div class="app-popular__column">
+                        <div class="app-popular__image-wrap">
+                            <img src="img/lake-joseph.png" class="image app-popular__image">
+                        </div>
+                        <span class="app-popular__name">Lake Joseph</span>
+                    </div>
+                    <div class="app-popular__column">
+                        <div class="app-popular__image-wrap">
+                            <img src="img/lake-rosseau.png" class="image app-popular__image">
+                        </div>
+                        <span class="app-popular__name">Lake Rosseau</span>
+                    </div>
+                    <div class="app-popular__column">
+                        <div class="app-popular__image-wrap">
+                            <img src="img/lake-muskoka.png" class="image app-popular__image">
+                        </div>
+                        <span class="app-popular__name">Lake Muskoka</span>
+                    </div>
+                    <div class="app-popular__column">
+                        <div class="app-popular__image-wrap">
+                            <img src="img/skeleton-lake.png" class="image app-popular__image">
+                        </div>
+                        <span class="app-popular__name">Skeleton Lake</span>
+                    </div>
+                    <div class="app-popular__column">
+                        <div class="app-popular__image-wrap">
+                            <img src="img/fairy-lake.png" class="image app-popular__image">
+                        </div>
+                        <span class="app-popular__name">Fairy Lake</span>
+                    </div>
+                    <div class="app-popular__column">
+                        <div class="app-popular__image-wrap">
+                            <img src="img/lake-joseph.png" class="image app-popular__image">
+                        </div>
+                        <span class="app-popular__name">Lake Joseph</span>
+                    </div>
+                    <div class="app-popular__column">
+                        <div class="app-popular__image-wrap">
+                            <img src="img/lake-rosseau.png" class="image app-popular__image">
+                        </div>
+                        <span class="app-popular__name">Lake Rosseau</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 
 
@@ -217,7 +285,7 @@
             <div class="row m-row">
                 <div class="column col-lg-3 ">
                     <div class="welcome-person">
-                        <div class="welcome-person__image"></div>
+                        <img src="img/john.png" class="image">
                         <div class="welcome-person__bot">
                             <span class="welcome-person__name">John Aben</span>
                             <span class="welcome-person__role">Broker</span>
@@ -227,7 +295,7 @@
                 </div>
                 <div class="column col-lg-3 ">
                     <div class="welcome-person">
-                        <div class="welcome-person__image"></div>
+                        <img src="img/mark.png" class="image">
                         <div class="welcome-person__bot">
                             <span class="welcome-person__name">Mark Aben</span>
                             <span class="welcome-person__role">Broker</span>
@@ -247,6 +315,8 @@
             <div class="column col-lg-4 welcome-item">
                 <a href="/">
                     <div class="welcome-item__content">
+                        <img src="img/welcome-item-1.png" class="image welcome-item__image">
+                        <i class="welcome-item__overlay"></i>
                         <span class="welcome-item__title">Free Property Valuation</span>
                     </div>
                 </a>
@@ -254,6 +324,8 @@
             <div class="column col-lg-4 welcome-item">
                 <a href="/">
                     <div class="welcome-item__content">
+                        <img src="img/welcome-item-2.png" class="image welcome-item__image">
+                        <i class="welcome-item__overlay"></i>
                         <span class="welcome-item__title">About the Team</span>
                     </div>
                 </a>
@@ -261,6 +333,8 @@
             <div class="column col-lg-4 welcome-item">
                 <a href="/">
                     <div class="welcome-item__content">
+                        <img src="img/welcome-item-3.png" class="image welcome-item__image">
+                        <i class="welcome-item__overlay"></i>
                         <span class="welcome-item__title">Latest Market Stats</span>
                     </div>
                 </a>
@@ -270,13 +344,17 @@
     </div>
 </section>
 
-<section class="section --padding --bg">
-    <div class="container">
-        <div class="row m-row">
-            <div class="column col-lg-9">
-                <h2 class="app-title --white">WHAT MAKES US DIFFERENT</h2>
-                <p class="app-txt --white --mb">We value your time and appreciate this opportunity to outline why we are among the most qualified in Muskoka to sell your property. We understand choosing to sell your piece of Muskoka is a significant decision and we bring expertise, integrity and honesty to every real estate transaction. While our online presence maximizes potential leads, our comprehensive, step-by-step marketing plan combines high-resolution virtual tours, complete with aerial video, social media and weekly market updates to keep you informed on your property and market conditions. Aside from your property's presentation, we have spent most of our lives working in the Muskoka area and understand the intricacies that could arise in a typical Muskoka transaction. The relationships we build with our clients are important to us, as they help us identify and protect their best interests. For more information on why you should choose The Aben Team for your real estate needs, click learn more below.</p>
-                <a href="/" class="btn btn-primary">LEARN MORE</a>
+<section class="section --padding app-different">
+    <div class="app-different__overlay"></div>
+    <div class="app-different__wrap">
+        <img src="img/drone.png" class="app-different__drone">
+        <div class="container">
+            <div class="row m-row">
+                <div class="column col-lg-9">
+                    <h2 class="app-title --white">WHAT MAKES US DIFFERENT</h2>
+                    <p class="app-txt --white --mb">We value your time and appreciate this opportunity to outline why we are among the most qualified in Muskoka to sell your property. We understand choosing to sell your piece of Muskoka is a significant decision and we bring expertise, integrity and honesty to every real estate transaction. While our online presence maximizes potential leads, our comprehensive, step-by-step marketing plan combines high-resolution virtual tours, complete with aerial video, social media and weekly market updates to keep you informed on your property and market conditions. Aside from your property's presentation, we have spent most of our lives working in the Muskoka area and understand the intricacies that could arise in a typical Muskoka transaction. The relationships we build with our clients are important to us, as they help us identify and protect their best interests. For more information on why you should choose The Aben Team for your real estate needs, click learn more below.</p>
+                    <a href="/" class="btn btn-primary">LEARN MORE</a>
+                </div>
             </div>
         </div>
     </div>

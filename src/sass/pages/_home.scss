@@ -10,7 +10,9 @@
   &__content{
     position: relative;
   }
-  &__carousel{}
+  &__carousel{
+    margin: 0 -15px;
+  }
   &__column{
     width: 33.33333%;
     padding: 0 15px;
@@ -64,14 +66,69 @@
     text-transform: uppercase;
   }
   &__price{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+    background-color: rgba(107, 125, 123, 0.8);
     text-align: center;
     span{
       display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
       text-transform: uppercase;
     }
   }
   &__content{
     padding: 30px;
+  }
+  &__name{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--col-black);
+  }
+  &__location{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    .icon-marker{
+      color: var(--col-battleship-grey);
+    }
+  }
+  &__bottom{
+    height: 50px;
+    border-top: 1px solid #ebebeb;
+  }
+  &__property{
+    position: relative;
+    @include grid-size(50%);
+    text-align: center;
+    line-height: 50px;
+    & + &:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 50px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #ebebeb;
+    }
+    span{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      color: #666;
+    }
   }
   &__{}
 }
@@ -81,7 +138,22 @@
 
 
 .app-popular{
-  background-image: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8));
+  background: url(/src/img/app-popular.png) no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  &__overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8));
+  }
+  &__wrap{
+    position: relative;
+    z-index: 3;
+  }
   &__title{
     margin-bottom: 35px;
   }
@@ -98,11 +170,12 @@
     width: 20%;
     padding: 0 15px;
   }
-  &__image{
-    width: 170px;
+  &__image-wrap{
     height: 170px;
-    background-color: #fff;
     margin-bottom: 30px;
+  }
+  &__image{
+    margin: auto;
   }
   &__name{
     display: block;
@@ -175,7 +248,23 @@
   &__content{
     position: relative;
     height: 250px;
-    background-color: var(--col-black);
+    overflow: hidden;
+    &:hover{
+      .welcome-item__image{
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__image{
+    @include transition;
+  }
+  &__overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.45);
   }
   &__title{
     display: block;
@@ -183,6 +272,7 @@
     top: 115px;
     left: 0;
     right: 0;
+    z-index: 3;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -192,6 +282,32 @@
     color: #fff;
   }
 }
+
+
+.app-different{
+  background: url(/src/img/app-different.png) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  &__overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to left, rgba(98, 98, 98, 0.15), var(--col-black));
+  }
+  &__wrap{
+    position: relative;
+    z-index: 3;
+  }
+  &__drone{
+    position: absolute;
+    max-width: 100%;
+    right: 0;
+    top: -115px;
+  }
+}
+
 
 .app-blog{
   padding: 80px 0 60px 0;
@@ -235,6 +351,7 @@
 
 
 .app-exposure{
+
   &__title{
     margin-bottom: 40px;
   }
