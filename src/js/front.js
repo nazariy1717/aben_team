@@ -13,6 +13,7 @@ let front = {
         this.events();
         this.rangeInit();
         this.newSlider('.app-popular__carousel');
+        this.newSlider('.app-exposure__carousel');
     },
 
     newSlider: function (selector, options) {
