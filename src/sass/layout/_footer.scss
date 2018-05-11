@@ -3,12 +3,33 @@
 
 
 .footer{
-  height: 527px;
   background-color: #222427;
   padding: 80px 0;
-
+  @media (max-width: $breakpoint-grid-lg){
+    padding: 60px 0;
+  }
+  @media (max-width: $breakpoint-grid-sm){
+    padding: 45px 0;
+  }
+  &__column{
+    @media (max-width: $breakpoint-grid-lg){
+      margin-bottom: 30px;
+      &:nth-child(4){
+        @include order(2);
+      }
+      &:nth-child(3){
+        @include order(3);
+      }
+      &:nth-child(2){
+        @include order(4);
+      }
+    }
+  }
   &__social{
     margin: 30px 0;
+    a:hover{
+      color: #fff;
+    }
   }
   &__title{
     display: block;
@@ -19,7 +40,6 @@
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 20px;
-
   }
   &__txt{
     font-family: 'Open Sans', sans-serif;
@@ -28,19 +48,19 @@
     line-height: 1.57;
     color: var(--col-warm-grey);
   }
-
   &__img{
     display: inline-block;
     margin-bottom: 20px;
     & + &{
       margin-left: 20px;
+      @media (max-width: $breakpoint-grid-xl) {
+        margin-left: 0;
+      }
     }
   }
-  &__{}
 }
 
 .footer-links{
-  &__item{}
   &__link{
     display: block;
     font-family: 'Open Sans', sans-serif;

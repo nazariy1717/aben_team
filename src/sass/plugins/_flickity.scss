@@ -63,6 +63,12 @@
   background: url(/src/img/slider-arr-prev.png) center no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
+  @media (max-width: $breakpoint-grid-lg){
+    left: -45px;
+  }
+  @media (max-width: $breakpoint-grid-md){
+    left: -15px;
+  }
 }
 
 .flickity-prev-next-button.next {
@@ -70,6 +76,12 @@
   background: url(/src/img/slider-arr-next.png) center no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
+  @media (max-width: $breakpoint-grid-lg){
+    right: -45px;
+  }
+  @media (max-width: $breakpoint-grid-md){
+    right: -15px;
+  }
 }
 
 .flickity-prev-next-button.previous svg {

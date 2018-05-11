@@ -355,7 +355,6 @@
 
 
 .app-exposure{
-
   &__title{
     margin-bottom: 40px;
   }
@@ -364,6 +363,13 @@
     padding: 0 100px;
     height: 110px;
     overflow: hidden;
+    @media (max-width: $breakpoint-grid-lg){
+      padding: 0 60px;
+    }
+    @media (max-width: $breakpoint-grid-md){
+      padding: 0 30px;
+    }
+
   }
   &__carousel{
     margin: 0 -15px;
@@ -371,6 +377,18 @@
   &__column{
     width: 20%;
     padding: 0 15px;
+    @media (max-width: $breakpoint-grid-lg){
+      width: 25%;
+    }
+    @media (max-width: $breakpoint-grid-md){
+      width: 33.33333%;
+    }
+    @media (max-width: $breakpoint-grid-sm){
+      width: 50%;
+    }
+    @media (max-width: 375px){
+      width: 100%;
+    }
   }
   &__block{
     display: table-cell;
@@ -379,6 +397,9 @@
     height: 110px;
     background-color: #fff;
     border: solid 1px #ebebeb;
+    @media (max-width: 375px){
+      width: 230px;
+    }
     img{
       margin: auto;
     }
