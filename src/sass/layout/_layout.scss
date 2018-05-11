@@ -2,6 +2,21 @@
 @import "../tools/breakpoints";
 
 
+.social-list{
+  &__item{
+    display: inline-block;
+    & + &{
+      margin-left: 15px;
+    }
+  }
+  &__link{
+    display: block;
+    font-size: 16px;
+    color: #999;
+    @include transition;
+  }
+}
+
 .app-form{
   padding: 60px 0 80px 0;
   background-color: var(--col-light-grey);
@@ -25,19 +40,49 @@
 
 .app-testimonial{
   background-color: #eee;
-}
-
-.social-list{
-  &__item{
-    display: inline-block;
-    & + &{
-      margin-left: 15px;
+  &__quote{
+    display: block;
+    margin: 45px 0;
+    text-align: center;
+    font-size: 30px;
+    color: var(--col-battleship-grey);
+    @media (max-width: $breakpoint-grid-lg){
+      margin: 30px 0;
     }
   }
-  &__link{
+}
+
+.testimonial{
+  &__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.61;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  &__name{
     display: block;
-    font-size: 16px;
-    color: #999;
-    @include transition;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0.89;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--col-black);
+    margin-bottom: 10px;
+  }
+  &__role{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.64;
+    text-align: center;
+    color: var(--col-warm-grey);
   }
 }
+
+
