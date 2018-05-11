@@ -7,11 +7,13 @@ let front = {
         autoPlay: true,
         cellAlign: 'left',
         contain: true,
+        imagesLoaded: true
     },
 
     init: function () {
         this.events();
         this.rangeInit();
+        this.newSlider('.app-suggest__carousel');
         this.newSlider('.app-popular__carousel');
         this.newSlider('.app-exposure__carousel');
     },

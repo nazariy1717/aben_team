@@ -84,6 +84,46 @@
   }
 }
 
+
+.app-suggest__carousel{
+  @media (max-width: $breakpoint-grid-xl){
+    padding: 0 30px;
+  }
+  .flickity-prev-next-button.previous {
+    left: -30px;
+    @media (max-width: $breakpoint-grid-xl){
+      left: 15px;
+    }
+    @media (max-width: $breakpoint-grid-lg){
+      left: 15px;
+    }
+    @media (max-width: $breakpoint-grid-md){
+      left: 15px;
+    }
+  }
+
+  .flickity-prev-next-button.next {
+    right: -30px;
+    @media (max-width: $breakpoint-grid-xl){
+      right: 15px;
+    }
+    @media (max-width: $breakpoint-grid-lg){
+      right: 15px;
+    }
+    @media (max-width: $breakpoint-grid-md){
+      right: 15px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
 .flickity-prev-next-button.previous svg {
   display: none;
 }
