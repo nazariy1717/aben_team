@@ -317,7 +317,8 @@
 }
 
 .app-blog-item{
-  margin-bottom: 30px;
+  max-width: 370px;
+  margin: auto auto 30px;
   &__top{
     margin-bottom: 20px;
   }
@@ -346,7 +347,10 @@
     color: var(--col-warm-grey);
     margin-bottom: 15px;
   }
-  &__desc{}
+  &__desc{
+    height: 66px;
+    @include text-ellipsis(3);
+  }
 }
 
 

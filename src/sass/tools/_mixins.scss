@@ -28,7 +28,10 @@
   order: $number;
 }
 
-@mixin text-small() {
-  font-size: 12px;
-  line-height: 16px;
+@mixin text-ellipsis($strokes) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $strokes;
+  -webkit-box-orient: vertical;
 }

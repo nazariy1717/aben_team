@@ -21,6 +21,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-clock:before {
+  content: "\e900";
+  color: #6b7d7b;
+}
+.icon-phone:before {
+  content: "\e901";
+  color: #ccc;
+}
+.icon-quote:before {
+  content: "\e904";
+  color: #6b7d7b;
+}
 .icon-bathroom:before {
   content: "\e902";
   color: #ccc;
@@ -31,4 +43,19 @@
 }
 .icon-marker:before {
   content: "\e947";
+}
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-pinterest:before {
+  content: "\ead1";
 }
