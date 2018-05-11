@@ -43,40 +43,37 @@
 .flickity-prev-next-button {
   position: absolute;
   top: 50%;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 25px;
   cursor: pointer;
+  border: 0;
+  outline: none;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   transition: all 0.3s ease;
 }
 
-.flickity-prev-next-button:hover {
-  background: #333;
-}
-
-.flickity-prev-next-button:hover .arrow {
-  fill: #fff;
-}
 
 .flickity-prev-next-button:focus {
   outline: none;
 }
 
-.flickity-prev-next-button:active {
-}
-
 .flickity-prev-next-button.previous {
   left: -85px;
+  background: url(/src/img/slider-arr-prev.png) center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
 
 .flickity-prev-next-button.next {
   right: -85px;
+  background: url(/src/img/slider-arr-next.png) center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
 
 .flickity-prev-next-button.previous svg {
-  //left: 40px;
-  //top: 40px;
+  display: none;
 }
 
 .flickity-rtl .flickity-prev-next-button.previous {

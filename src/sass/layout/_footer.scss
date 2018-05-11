@@ -7,7 +7,9 @@
   background-color: #222427;
   padding: 80px 0;
 
-  &__{}
+  &__social{
+    margin: 30px 0;
+  }
   &__title{
     display: block;
     font-family: 'Montserrat', sans-serif;
@@ -26,7 +28,14 @@
     line-height: 1.57;
     color: var(--col-warm-grey);
   }
-  &__{}
+
+  &__img{
+    display: inline-block;
+    margin-bottom: 20px;
+    & + &{
+      margin-left: 20px;
+    }
+  }
   &__{}
 }
 
@@ -96,5 +105,11 @@
   background-color: #191a1b;
   &__txt{
     line-height: 80px;
+    a{
+      @include transition;
+      &:hover{
+        color: #fff;
+      }
+    }
   }
 }

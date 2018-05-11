@@ -26,3 +26,18 @@
 .app-testimonial{
   background-color: #eee;
 }
+
+.social-list{
+  &__item{
+    display: inline-block;
+    & + &{
+      margin-left: 15px;
+    }
+  }
+  &__link{
+    display: block;
+    font-size: 16px;
+    color: #999;
+    @include transition;
+  }
+}

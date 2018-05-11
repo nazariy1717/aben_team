@@ -373,9 +373,14 @@
     padding: 0 15px;
   }
   &__block{
+    display: table-cell;
+    vertical-align: middle;
     width: 170px;
     height: 110px;
     background-color: #fff;
     border: solid 1px #ebebeb;
+    img{
+      margin: auto;
+    }
   }
 }
