@@ -1,4 +1,6 @@
 let front = {
+    hamburger: $('.hamburger'),
+    nav: $('.header-list'),
 
     slider_options_default: {
         wrapAround: true,
@@ -12,6 +14,7 @@ let front = {
 
     init: function () {
         this.events();
+        this.headerScroll();
         this.rangeInit();
         this.newSlider('.app-suggest__carousel');
         this.newSlider('.app-popular__carousel');
@@ -23,6 +26,27 @@ let front = {
         // let carousel = new Flickity(document.querySelector(selector), options);
 
         return new Flickity(document.querySelector(selector), options);
+    },
+
+    headerScroll: function(){
+        if( $(window).scrollTop() > 0){
+            $('.header').addClass('js-fixed');
+            $('.hamburger').addClass('js-fixed');
+        } else {
+            $('.header').removeClass('js-fixed');
+            $('.hamburger').removeClass('js-fixed');
+        }
+    },
+
+    toogleNav: function(){
+        if (!this.hamburger.hasClass('is-active')) {
+            this.hamburger.addClass("is-active");
+            this.nav.toggleClass('js-show');
+        }
+        else {
+            this.hamburger.removeClass("is-active");
+            this.nav.toggleClass('js-show');
+        }
     },
 
     getVals: function () {
@@ -52,12 +76,14 @@ let front = {
     events: function () {
         let self = this;
 
-
-        $('#app_form').submit(function (e) {
-            e.preventDefault();
-            let form = $('#app_form').serialize();
-            console.log(form);
+        $(window).on('scroll',function(){
+            self.headerScroll();
         });
+
+        $(document).on('click', '.hamburger', function () {
+            self.toogleNav();
+        });
+
 
     }
 };

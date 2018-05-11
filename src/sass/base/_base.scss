@@ -28,7 +28,7 @@ a{
   color: var(--col-black);
   padding-bottom: 20px;
   margin-bottom: 20px;
-  @media (max-width: $breakpoint-grid-sm){
+  @media (max-width: $breakpoint-sm){
     font-size: 24px;
   }
   &:after{
@@ -88,7 +88,7 @@ a{
   }
   &.--padding-80{
     padding: 80px 0;
-    @media (max-width: $breakpoint-grid-md){
+    @media (max-width: $breakpoint-md){
       padding: 60px 0;
     }
   }

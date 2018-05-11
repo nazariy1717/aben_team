@@ -2,8 +2,15 @@
 @import "../tools/breakpoints";
 
 
+
+.app-screen{
+  height: 870px;
+  background-color: #000;
+}
+
+
+
 .app-suggest{
-  overflow: hidden;
   padding: 60px 0 80px;
   &__title{
     margin-bottom: 30px;
@@ -11,14 +18,14 @@
   &__content{
     position: relative;
     //height: 515px;
-    overflow: hidden;
+    //overflow: hidden;
     @media (max-width: 1110px){
       //height: 475px;
     }
-    @media (max-width: $breakpoint-grid-lg){
+    @media (max-width: $breakpoint-lg){
       //height: 515px;
     }
-    @media (max-width: $breakpoint-grid-md){
+    @media (max-width: $breakpoint-md){
     }
   }
   &__carousel{
@@ -27,21 +34,18 @@
   &__column{
     width: 33.33333%;
     padding: 0 15px;
-    @media (max-width: $breakpoint-grid-lg){
+    @media (max-width: $breakpoint-lg){
       width: 50%;
     }
-    @media (max-width: $breakpoint-grid-sm){
+    @media (max-width: $breakpoint-sm){
       width: 100%;
     }
   }
 }
 
-
-
 .suggest-item{
-  //border: solid 1px #ebebeb;
+  border: solid 1px #ebebeb;
   max-width: 370px;
-  border: solid 1px #000;
   margin: auto auto 40px;
   &__img-wrap{
     position: relative;
@@ -93,7 +97,7 @@
     line-height: 55px;
     background-color: rgba(107, 125, 123, 0.8);
     text-align: center;
-    @media (max-width: $breakpoint-grid-md){
+    @media (max-width: $breakpoint-md){
       width: inherit;
       padding: 0 10px;
       height: 35px;
@@ -106,17 +110,17 @@
       font-weight: bold;
       color: #ffffff;
       text-transform: uppercase;
-      @media (max-width: $breakpoint-grid-md){
+      @media (max-width: $breakpoint-md){
         font-size: 18px;
       }
-      @media (max-width: $breakpoint-grid-sm){
+      @media (max-width: $breakpoint-sm){
         font-size: 16px;
       }
     }
   }
   &__content{
     padding: 30px;
-    @media (max-width: $breakpoint-grid-md){
+    @media (max-width: $breakpoint-md){
       padding: 20px;
     }
   }
@@ -129,7 +133,7 @@
     @include text-ellipsis(1);
     height: 28px;
     color: var(--col-black);
-    @media (max-width: $breakpoint-grid-md){
+    @media (max-width: $breakpoint-md){
       font-size: 18px;
       height: 21px;
     }
@@ -173,10 +177,6 @@
   &__{}
 }
 
-
-
-
-
 .app-popular{
   background: url(/src/img/app-popular.png) no-repeat center;
   -webkit-background-size: cover;
@@ -202,10 +202,10 @@
     padding: 0 100px;
     height: 225px;
     overflow: hidden;
-    @media (max-width: $breakpoint-grid-lg){
+    @media (max-width: $breakpoint-lg){
       padding: 0 60px;
     }
-    @media (max-width: $breakpoint-grid-md){
+    @media (max-width: $breakpoint-md){
       padding: 0 30px;
     }
   }
@@ -215,13 +215,13 @@
   &__column{
     width: 20%;
     padding: 0 15px;
-    @media (max-width: $breakpoint-grid-lg){
+    @media (max-width: $breakpoint-lg){
       width: 25%;
     }
-    @media (max-width: $breakpoint-grid-md){
+    @media (max-width: $breakpoint-md){
       width: 33.33333%;
     }
-    @media (max-width: $breakpoint-grid-sm){
+    @media (max-width: $breakpoint-sm){
       width: 50%;
     }
     @media (max-width: 374px){
@@ -266,7 +266,7 @@
 .welcome-person{
   max-width: 270px;
   margin: auto;
-  @media (max-width: $breakpoint-grid-lg){
+  @media (max-width: $breakpoint-lg){
     margin: auto auto 30px;
   }
   &__bot{
@@ -365,7 +365,7 @@
     max-width: 100%;
     right: 0;
     top: -115px;
-    @media (max-width: $breakpoint-grid-lg){
+    @media (max-width: $breakpoint-lg){
       display: none;
     }
   }
@@ -424,10 +424,10 @@
     padding: 0 100px;
     height: 110px;
     overflow: hidden;
-    @media (max-width: $breakpoint-grid-lg){
+    @media (max-width: $breakpoint-lg){
       padding: 0 60px;
     }
-    @media (max-width: $breakpoint-grid-md){
+    @media (max-width: $breakpoint-md){
       padding: 0 30px;
     }
   }
@@ -437,13 +437,13 @@
   &__column{
     width: 20%;
     padding: 0 15px;
-    @media (max-width: $breakpoint-grid-lg){
+    @media (max-width: $breakpoint-lg){
       width: 25%;
     }
-    @media (max-width: $breakpoint-grid-md){
+    @media (max-width: $breakpoint-md){
       width: 33.33333%;
     }
-    @media (max-width: $breakpoint-grid-sm){
+    @media (max-width: $breakpoint-sm){
       width: 50%;
     }
     @media (max-width: 374px){
