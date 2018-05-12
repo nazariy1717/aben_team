@@ -97,6 +97,109 @@
 
 <section class="section app-screen">
 
+    <div class="app-carousel">
+        <div class="app-carousel__column" style="background-image: url(/src/img/app-slider.jpg);">
+            <div class="app-carousel__overlay"></div>
+            <div class="app-carousel__content display-table">
+                <div class="display-table__cell">
+                    <h1 class="app-carousel__title">1078 Woodwinds Road</h1>
+                    <a href="/" class="app-carousel__btn">
+                        <span>$990,000</span>
+                        <span>LEARN MORE</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="app-carousel__column" style="background-image: url(/src/img/app-slider.jpg);">
+            <div class="app-carousel__overlay"></div>
+            <div class="app-carousel__content display-table">
+                <div class="display-table__cell">
+                    <h1 class="app-carousel__title">1078 Woodwinds Road</h1>
+                    <a href="/" class="app-carousel__btn">
+                        <span>$990,000</span>
+                        <span>LEARN MORE</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="screen-tabs">
+        <div class="container">
+            <ul class="screen-tabs__list tabs-ul">
+                <li class="screen-tabs__list-item">
+                    <a onclick="front.openTab(this, 'tab-0','.screen-tabs')"
+                       class="screen-tabs__list-link tab-links active">Home/Cottage</a>
+                </li>
+                <li class="screen-tabs__list-item">
+                    <a onclick="front.openTab(this, 'tab-1','.screen-tabs')"
+                       class="screen-tabs__list-link tab-links">Condo</a>
+                </li>
+                <li class="screen-tabs__list-item">
+                    <a onclick="front.openTab(this, 'tab-2','.screen-tabs')"
+                       class="screen-tabs__list-link tab-links">Vacant Land</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tabs-wrap">
+
+            <div class="tab-content active" id="tab-0">
+                <div class="tabs-wrap__content">
+                    <div class="container">
+                        <form action="/" id="">
+                            <div class="row m-row">
+                                <div class="column col-xs-12">
+                                    <div class="form__group-15">
+                                        <label for="tab-location" class="form__label">Location</label>
+                                        <select name="location" id="tab-location" class="form__select">
+                                            <option value="0" selected>All Muskoka</option>
+                                            <option value="1">Location 1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form__group-15">
+                                        <label for="bedrooms" class="form__label">Bedrooms</label>
+                                        <select name="bedrooms" id="bedrooms" class="form__select">
+                                            <option value="0" selected>1+</option>
+                                            <option value="1">2+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form__group-15">
+                                        <label for="bathrooms" class="form__label">Bathrooms</label>
+                                        <select name="bathrooms" id="bathrooms" class="form__select">
+                                            <option value="0" selected>1+</option>
+                                            <option value="1">2+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form__group-15">
+                                        <div class="range range__wrap">
+                                            <span class="rangeValues form__label" ></span>
+                                            <input name="range" value="0" min="0" max="10000000" step="10000" type="range">
+                                            <input name="range" value="10000000" min="0" max="10000000" step="10000" type="range">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12 align-self-bottom">
+                                    <div class="form__group-15">
+                                        <button type="submit" class="btn btn-primary">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="tab-1"></div>
+            <div class="tab-content" id="tab-2"></div>
+        </div>
+    </div>
+
 </section>
 
 

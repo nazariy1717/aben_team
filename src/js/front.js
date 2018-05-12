@@ -16,6 +16,7 @@ let front = {
         this.events();
         this.headerScroll();
         this.rangeInit();
+        this.newSlider('.app-carousel');
         this.newSlider('.app-suggest__carousel');
         this.newSlider('.app-popular__carousel');
         this.newSlider('.app-exposure__carousel');
@@ -70,6 +71,24 @@ let front = {
                 }
             }
         }
+    },
+
+    openTab: function (element, tabName, parent) {
+        let i, tab_content, tab_links;
+
+        tab_content = $(element).closest(parent).find('.tabs-wrap').find('.tab-content');
+        for (i = 0; i < tab_content.length; i++) {
+            tab_content[i].style.display = "none";
+        }
+
+        tab_links = $(element).closest('.tabs-ul').find('.tab-links');
+
+        for (i = 0; i < tab_links.length; i++) {
+            tab_links[i].className = tab_links[i].className.replace(" active", "");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        $(element).addClass('active');
     },
 
 
