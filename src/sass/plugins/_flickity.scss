@@ -59,7 +59,7 @@
 
 .flickity-prev-next-button.previous {
   left: -85px;
-  background: url(/src/img/slider-arr-prev.png) center no-repeat;
+  background: url(../img/slider-arr-prev.png) center no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
   @media (max-width: $breakpoint-lg){
@@ -72,7 +72,7 @@
 
 .flickity-prev-next-button.next {
   right: -85px;
-  background: url(/src/img/slider-arr-next.png) center no-repeat;
+  background: url(../img/slider-arr-next.png) center no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
   @media (max-width: $breakpoint-lg){
@@ -94,7 +94,7 @@
   }
   .flickity-prev-next-button.previous {
     left: 40px;
-    background: url(/src/img/app-carousel-prev.png) center no-repeat;
+    background: url(../img/app-carousel-prev.png) center no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
     @media (max-width: $breakpoint-xl){
@@ -107,7 +107,7 @@
 
   .flickity-prev-next-button.next {
     right: 40px;
-    background: url(/src/img/app-carousel-next.png) center no-repeat;
+    background: url(../img/app-carousel-next.png) center no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
     @media (max-width: $breakpoint-xl){

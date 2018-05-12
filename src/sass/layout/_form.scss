@@ -140,7 +140,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: $input-height;
   border: none;
   border-radius: $input-border-radius;
-  background-image: url(/src/img/range.png);
+  background-image: url(../img/range.png);
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -152,7 +152,7 @@ input[type="range"]::-moz-range-thumb {
   height: $input-height;
   border: none;
   border-radius: $input-border-radius;
-  background-image: url(/src/img/range.png);
+  background-image: url(../img/range.png);
 }
 
 input[type="range"]::-ms-thumb {
@@ -164,7 +164,7 @@ input[type="range"]::-ms-thumb {
   height: $input-height;
   border-radius: $input-border-radius;
   border: 0;
-  background-image: url(/src/img/range.png);
+  background-image: url(../img/range.png);
 }
 
 input[type=range]::-moz-range-track {

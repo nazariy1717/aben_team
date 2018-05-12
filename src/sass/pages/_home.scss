@@ -338,7 +338,7 @@
 }
 
 .app-popular{
-  background: url(/src/img/app-popular.png) no-repeat center;
+  background: url(../img/app-popular.png) no-repeat center;
   -webkit-background-size: cover;
   background-size: cover;
   &__overlay{
@@ -505,7 +505,7 @@
 }
 
 .app-different{
-  background: url(/src/img/app-different.png) center no-repeat;
+  background: url(../img/app-different.png) center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   &__overlay{
