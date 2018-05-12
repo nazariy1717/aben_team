@@ -24,6 +24,48 @@
 .icon-chevrons-right:before {
   content: "\e905";
 }
+.icon-team-1:before {
+  content: "\e908";
+  color: #6b7d7b;
+}
+.icon-team-2 .path1:before {
+  content: "\e909";
+  color: none;
+}
+.icon-team-2 .path2:before {
+  content: "\e90a";
+  margin-left: -1.4306640625em;
+  color: none;
+}
+.icon-team-2 .path3:before {
+  content: "\e90b";
+  margin-left: -1.4306640625em;
+  color: rgb(107, 125, 123);
+}
+.icon-team-2 .path4:before {
+  content: "\e90c";
+  margin-left: -1.4306640625em;
+  color: rgb(255, 255, 255);
+}
+.icon-team-3 .path1:before {
+  content: "\e90d";
+  color: rgb(107, 125, 123);
+}
+.icon-team-3 .path2:before {
+  content: "\e90e";
+  margin-left: -1.1943359375em;
+  color: rgb(107, 125, 123);
+}
+.icon-team-3 .path3:before {
+  content: "\e90f";
+  margin-left: -1.1943359375em;
+  color: rgb(107, 125, 123);
+}
+.icon-team-3 .path4:before {
+  content: "\e910";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
 .icon-list-2:before {
   content: "\e906";
   color: #6b7d7b;
