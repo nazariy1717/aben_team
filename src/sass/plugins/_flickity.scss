@@ -190,7 +190,7 @@
   width: 100%;
   left: 0;
   right: 0;
-  bottom: -30px;
+  bottom: -40px;
   z-index: 10;
   padding: 0;
   list-style: none;
@@ -199,16 +199,16 @@
   transition: all 0.3s ease;
   .dot {
     position: relative;
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
+    border: solid 1px var(--col-battleship-grey);
     border-radius: 50%;
-    border: 1px solid var(--col-red);
     display: inline-block;
     cursor: pointer;
-    background-color: white;
+    background-color: transparent;
   }
   .dot + .dot {
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .dot.is-selected:before {
     content: '';
@@ -218,7 +218,7 @@
     left: 0;
     right: 0;
     border-radius: 50%;
-    background-color: var(--col-red);
+    background-color: var(--col-battleship-grey);
     @include transition;
   }
 }

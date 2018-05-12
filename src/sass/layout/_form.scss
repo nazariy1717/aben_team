@@ -14,11 +14,20 @@ input[type=number]::-webkit-outer-spin-button {
       border: solid 1px #ebebeb;
     }
   }
+  &.--team{
+    .form__input{
+      background-color: #ebebeb;
+    }
+    .form__area{
+      background-color: #ebebeb;
+    }
+  }
   &__group-5 {  margin-bottom: 5px;position: relative;   }
   &__group-15{  margin-bottom: 15px;position: relative;  }
+  &__group-20{  margin-bottom: 20px;position: relative;  }
   &__group-25{  margin-bottom: 25px;position: relative;  }
   &__group-30{  margin-bottom: 30px;position: relative;  }
-  &__group-50{  margin-bottom: 30px;position: relative;  }
+  &__group-50{  margin-bottom: 50px;position: relative;  }
 
   &__label{
     display: block;
@@ -46,9 +55,7 @@ input[type=number]::-webkit-outer-spin-button {
     outline: none;
     background-color: #fff;
     @include transition;
-    &:focus{
-      box-shadow: 0 0 13px rgba(78, 78, 78, 0.2);
-    }
+
   }
 
   &__input, &__select{
@@ -65,9 +72,6 @@ input[type=number]::-webkit-outer-spin-button {
     outline: none;
     background-color: #fff;
     @include transition;
-    &:focus{
-      box-shadow: 0 0 13px rgba(78, 78, 78, 0.2);
-    }
   }
   &__select{
     option{

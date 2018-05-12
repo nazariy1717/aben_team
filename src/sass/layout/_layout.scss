@@ -114,6 +114,9 @@
 }
 
 .testimonial{
+  &__cell{
+    width: 100%;
+  }
   &__text{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -128,7 +131,7 @@
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 800;
     line-height: 0.89;
     text-align: center;
     text-transform: uppercase;
