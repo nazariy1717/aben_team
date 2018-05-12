@@ -21,6 +21,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chevrons-right:before {
+  content: "\e905";
+}
+.icon-list-2:before {
+  content: "\e906";
+  color: #6b7d7b;
+}
+.icon-list-1:before {
+  content: "\e907";
+  color: #6b7d7b;
+}
 .icon-clock:before {
   content: "\e900";
   color: #6b7d7b;

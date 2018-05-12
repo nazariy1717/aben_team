@@ -1,0 +1,125 @@
+@import "../tools/mixins";
+@import "../tools/breakpoints";
+
+
+.search{
+  &__content{
+    padding: 60px 0;
+  }
+  &__top{
+    margin-bottom: 25px;
+  }
+  &__res{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.83;
+    color: var(--col-battleship-grey);
+  }
+  &__{}
+}
+
+.search-form{
+  &__select, &__btn{
+    width: 270px;
+  }
+}
+.search-filter{
+  &__item{
+    display: inline-block;
+  }
+  &__link{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 43px;
+    color: var(--col-battleship-grey);
+    @include transition;
+    &.active{
+      background-color: #ebebeb;
+    }
+    &:hover{
+      background-color: #ebebeb;
+    }
+  }
+}
+
+
+.search-list-count{
+  &__item{
+    display: inline-block;
+  }
+  &__link{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: var(--col-battleship-grey);
+    @include transition;
+    &.active{
+      background-color: #ebebeb;
+    }
+    &:hover{
+      background-color: #ebebeb;
+    }
+  }
+}
+
+
+
+
+
+.pagination{
+  text-align: center;
+  margin-bottom: 10px;
+  &__list{
+    display: table;
+    margin: auto;
+  }
+  &__item{
+    display: table-cell;
+    &:nth-child(1){
+      .pagination__link{
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+    }
+    &:last-child{
+      .pagination__link{
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+  &__link{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: solid 1px #ebebeb;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--col-battleship-grey);
+    @include transition;
+    &:hover{
+      color: #fff;
+      background-color: var(--col-battleship-grey);
+      border: solid 1px var(--col-battleship-grey);
+    }
+    &.active{
+      color: #fff;
+      background-color: var(--col-battleship-grey);
+      border: solid 1px var(--col-battleship-grey);
+    }
+  }
+}
