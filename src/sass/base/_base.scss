@@ -133,7 +133,6 @@ a{
 .breadcrumbs{
   position: relative;
   &__list{
-    text-align: left;
   }
   &__item{
     position: relative;
@@ -148,20 +147,23 @@ a{
     font-size: 14px;
     left: 1px;
     top: 0;
-    color: var(--grey1);
+    color: #fff;
   }
   &__link{
     text-decoration: none;
     display: block;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    line-height: 32px;
-    color: #fff;
+    line-height: normal;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.65);
     @include transition;
     &:hover{
-      color: var(--col-red);
+      color: #fff;
     }
     &.active{
-      color: var(--col-red);
+      font-weight: bold;
+      color: #fff;
     }
   }
 }

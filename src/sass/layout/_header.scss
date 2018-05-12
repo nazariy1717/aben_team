@@ -10,6 +10,9 @@
   padding: 20px 0;
   @include transition;
   backface-visibility: hidden;
+  &.js-active{
+    background-color: rgba(0,0,0,0.45);
+  }
   &.js-fixed{
     position: fixed;
     background-color: rgba(0,0,0,0.45);

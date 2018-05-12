@@ -1,6 +1,62 @@
 @import "../tools/mixins";
 @import "../tools/breakpoints";
 
+.small-screen{
+  position: relative;
+  height: 400px;
+  padding-top: 140px;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  @media (max-width: $breakpoint-lg){
+    padding-top: 110px;
+  }
+  @media (max-width: 850px){
+    padding-top: 105px;
+  }
+  @media (max-width: $breakpoint-md){
+    padding-top: 110px;
+  }
+  @media (max-width: $breakpoint-sm){
+    padding-top: 105px;
+  }
+  &__overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.55;
+    background-color: var(--col-black);
+  }
+  &__content{
+    position: relative;
+    z-index: 5;
+    height: calc(400px - 140px);
+    @media (max-width: $breakpoint-lg){
+      height: calc(400px - 110px);
+    }
+    @media (max-width: 850px){
+      height: calc(400px - 105px);
+    }
+    @media (max-width: $breakpoint-md){
+      height: calc(400px - 110px);
+    }
+    @media (max-width: $breakpoint-sm){
+      height: calc(400px - 105px);
+    }
+  }
+  &__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+}
+
 
 .social-list{
   &__item{
@@ -37,7 +93,6 @@
     }
   }
 }
-
 
 
 
