@@ -41,6 +41,10 @@
     margin-bottom: 20px;
   }
   &__btn{
+    max-width: 100%;
+    @media (max-width: $breakpoint-sm){
+      max-width: 270px;
+    }
     i{
       font-size: 16px;
       position: relative;
@@ -61,15 +65,18 @@
       cursor: pointer;
     }
   }
-  &__content{}
-
+  &__bottom{
+    margin: 15px 0;
+    padding: 15px 0 5px 0;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
   &__column{
     margin-bottom: 20px;
     span:nth-child(2){
       margin: 0;
     }
   }
-
   &__icon{
     font-size: 12px;
     position: absolute;
@@ -80,9 +87,18 @@
       transform: scale(-1);
     }
   }
-
+  &__table-wrap{
+    @media (max-width: $breakpoint-sm){
+      overflow-x: auto;
+    }
+  }
   &__table{
+    table-layout: fixed;
     width: 100%;
+    margin-bottom: 20px;
+    @media (max-width: $breakpoint-sm){
+      width: 550px;
+    }
     th{
       padding: 10px 0;
       text-align: left;
@@ -101,7 +117,6 @@
       color: var(--col-warm-grey);
     }
   }
-
   &__list-circle{
     padding-left: 20px;
     list-style-type: disc;
@@ -111,13 +126,35 @@
       margin-bottom: 10px;
     }
   }
+  &__image{
+    float: right;
+  }
 }
 
+.broker-column-row{
+  @media (max-width: $breakpoint-lg){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-top: 30px;
+  }
+}
 .broker-column{
   max-width: 270px;
   border: solid 1px #ebebeb;
   padding: 15px;
   margin-bottom: 30px;
+  @media (max-width: $breakpoint-lg){
+    & + & {
+      margin-left: 30px;
+      @media (max-width: 620px){
+        margin-left: 0;
+      }
+    }
+  }
   &__top{
     padding-bottom: 20px;
     margin-bottom: 25px;
@@ -147,9 +184,6 @@
       font-style: italic;
     }
   }
-
-  &__bottom{}
-
   &__txt{
     display: block;
     font-family: 'Open Sans', sans-serif;
@@ -157,5 +191,42 @@
     font-weight: normal;
     line-height: 1.57;
     color: var(--col-black);
+  }
+}
+
+.product-tabs{
+  &__list{}
+  &__wrap{
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+  &__list-item{
+    display: inline-block;
+  }
+  &__list-link{
+    display: block;
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 50px;
+    color: var(--col-black);
+    border: solid 1px transparent;
+    &.active{
+      border: solid 1px #ebebeb;
+    }
+  }
+}
+
+#product_map{
+  height: 500px;
+  @media (max-width: $breakpoint-md){
+    height: 400px;
+  }
+  @media (max-width: $breakpoint-sm){
+    height: 300px;
   }
 }

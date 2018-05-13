@@ -81,6 +81,9 @@ a{
     color: var(--col-battleship-grey);
     font-weight: bold;
   }
+  &.--small{
+    font-size: 12px;
+  }
 }
 // end of text classes
 
