@@ -54,6 +54,10 @@ a{
       background-color: #9b9b9b;
     }
   }
+  &.--small{
+    font-size: 24px;
+    line-height: 1.38;
+  }
 
 }
 
@@ -72,6 +76,10 @@ a{
   }
   &.--white{
    color: #fff;
+  }
+  &.--bold{
+    color: var(--col-battleship-grey);
+    font-weight: bold;
   }
 }
 // end of text classes
@@ -116,8 +124,10 @@ a{
 }
 
 .mb-0 {   margin-bottom: 0;    }
+.mb-10{  margin-bottom: 10px;  }
 .mb-15{  margin-bottom: 15px;  }
 .mb-30{  margin-bottom: 30px;  }
+.mb-40{  margin-bottom: 40px;  }
 .mb-45{  margin-bottom: 45px;  }
 .mb-75{  margin-bottom: 75px;  }
 

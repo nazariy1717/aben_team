@@ -1,0 +1,161 @@
+@import "../tools/mixins";
+@import "../tools/breakpoints";
+
+
+
+.product-form{
+  padding: 60px 0;
+  background-color: #eeeeee;
+  &__content{
+    padding: 50px 0;
+  }
+  &__list{
+    margin-bottom: 30px;
+    li{
+      display: inline-block;
+      i{
+        font-size: 30px;
+        position: relative;
+        color: #ccc;
+        top: 3px;
+        margin-right: 5px;
+      }
+      span{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--col-battleship-grey);
+      }
+    }
+    li + li{
+      margin-left: 30px;
+    }
+  }
+  &__title{
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--col-black);
+    margin-bottom: 20px;
+  }
+  &__btn{
+    i{
+      font-size: 16px;
+      position: relative;
+      top: 3px;
+      left: 5px;
+    }
+  }
+}
+
+.product-info{
+  padding: 30px 0;
+  &__block{
+    margin-bottom: 10px;
+  }
+  &__top{
+    position: relative;
+    &.--panel{
+      cursor: pointer;
+    }
+  }
+  &__content{}
+
+  &__column{
+    margin-bottom: 20px;
+    span:nth-child(2){
+      margin: 0;
+    }
+  }
+
+  &__icon{
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    @include transition;
+    &.js-active{
+      transform: scale(-1);
+    }
+  }
+
+  &__table{
+    width: 100%;
+    th{
+      padding: 10px 0;
+      text-align: left;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--col-battleship-grey);
+      font-weight: bold;
+    }
+    td{
+      padding: 10px 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--col-warm-grey);
+    }
+  }
+
+  &__list-circle{
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 20px;
+    li{
+      display: list-item;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.broker-column{
+  max-width: 270px;
+  border: solid 1px #ebebeb;
+  padding: 15px;
+  margin-bottom: 30px;
+  &__top{
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  &__image{
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  &__name{
+    span{
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 1.57;
+      color: var(--col-black);
+    }
+    span:nth-child(1){
+      font-weight: bold;
+    }
+    span:nth-child(2){
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+
+  &__bottom{}
+
+  &__txt{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.57;
+    color: var(--col-black);
+  }
+}
