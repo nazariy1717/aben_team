@@ -9,6 +9,9 @@
     font-weight: 600;
     line-height: normal;
     color: var(--col-black);
+    @media (max-width: $breakpoint-sm){
+      font-size: 24px;
+    }
   }
   &__price{
     font-family: 'Montserrat', sans-serif;
@@ -16,6 +19,9 @@
     font-weight: 800;
     line-height: 1.1;
     color: var(--col-black);
+    @media (max-width: $breakpoint-sm){
+      font-size: 24px;
+    }
   }
   &__code{
     font-family: 'Open Sans', sans-serif;
@@ -23,6 +29,9 @@
     font-weight: normal;
     line-height: normal;
     color: #666;
+    @media (max-width: $breakpoint-sm){
+      font-size: 18px;
+    }
   }
   &__top{
     margin-bottom: 10px;
@@ -36,9 +45,42 @@
   }
   &__carousel{
     position: relative;
-    height: 570px;
+    overflow: hidden;
+    //height: 570px;
+    @media (max-width: $breakpoint-xl){
+      //height: 420px;
+    }
+    img{
+      @media (max-width: $breakpoint-lg){
+        max-width: 100%;
+      }
+    }
   }
 }
+
+.product-carousel-column{
+  @media (max-width: $breakpoint-xl){
+    @include grid-size(calc(100% - 300px));
+  }
+  @media (max-width: $breakpoint-lg){
+    @include grid-size(calc(100% - 180px));
+  }
+  @media (max-width: 767px){
+    @include grid-size(100%);
+  }
+}
+.product-images-column{
+  @media (max-width: $breakpoint-xl){
+    @include grid-size(300px);
+  }
+  @media (max-width: $breakpoint-lg){
+    @include grid-size(180px);
+  }
+  @media (max-width: 767px){
+    @include grid-size(100%);
+  }
+}
+
 
 .product-prev{
   margin-bottom: 30px;
@@ -77,6 +119,9 @@
         width: 104px;
         border-radius: 3px;
         border-right: solid 1px #ebebeb;
+        @media (max-width: $breakpoint-sm){
+          display: none;
+        }
       }
     }
   }
@@ -114,6 +159,18 @@
   height: 570px;
   border: solid 1px #ebebeb;
   overflow: hidden;
+  @media (max-width: $breakpoint-xl){
+    height: 420px;
+  }
+  @media (max-width: 768px){
+    height: 365px;
+  }
+  @media (max-width: 767px){
+    height: 300px;
+  }
+  @media (max-width: $breakpoint-sm){
+    height: 255px;
+  }
   ::-webkit-scrollbar
   {
     width: 9px;
@@ -136,6 +193,18 @@
     margin-right: 10px;
     margin-top: 10px;
     padding: 0 0 10px 10px;
+    @media (max-width: $breakpoint-xl){
+      height: 420px;
+    }
+    @media (max-width: 768px){
+      height: 365px;
+    }
+    @media (max-width: 767px){
+      height: 300px;
+    }
+    @media (max-width: $breakpoint-sm){
+      height: 255px;
+    }
   }
   &__item{
     padding: 3px 4px;
@@ -144,6 +213,12 @@
     position: relative;
     height: 76px;
     margin-bottom: 4px;
+    @media (max-width: $breakpoint-sm){
+      max-width: 95px;
+    }
+    @media (max-width: 374px){
+      max-width: inherit;
+    }
     &.active{
       &:after{
         content: '';
@@ -153,8 +228,12 @@
         left: 0;
         bottom: 1px;
         border: solid 4px var(--col-battleship-grey);
-
-
+        @media (max-width: $breakpoint-sm){
+          bottom: 12px;
+        }
+        @media (max-width: 374px){
+          bottom: -5px;
+        }
       }
     }
     a{

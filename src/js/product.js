@@ -10,6 +10,7 @@ let product = {
         cellAlign: 'left',
         contain: true,
         imagesLoaded: true,
+        // adaptiveHeight: true,
         hash: true
     },
     slider_nav:{
