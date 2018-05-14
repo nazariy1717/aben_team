@@ -118,39 +118,122 @@
 <section class="section product">
 
     <div class="container">
-        <div class="product__top"></div>
+
+        <div class="product-prev">
+            <a href="/">
+                <i class="icon-chevrons-left"></i>
+                Go back
+            </a>
+        </div>
+
+        <div class="product__top">
+            <div class="row m-row align-justify align-middle">
+                <div class="column">
+                    <h1 class="product__name">1086 Pennwood Road #7, Port Carling</h1>
+                </div>
+                <div class="column">
+                    <span class="product__price">$2,295,000.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product__bottom">
+            <div class="row m-row align-justify align-middle">
+                <div class="column">
+                    <h1 class="product__code">MLS: 109939</h1>
+                </div>
+                <div class="column">
+                    <div class="product-soc">
+                        <ul class="product-soc__list">
+                            <li class="product-soc__item">
+                                <a href="/" class="product-soc__link" target="_blank" rel="nofollow">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="product-soc__item">
+                                <a href="/" class="product-soc__link" target="_blank" rel="nofollow">
+                                    <i class="icon-play"></i>
+                                </a>
+                            </li>
+                            <li class="product-soc__item">
+                                <a href="/" class="product-soc__link" target="_blank" rel="nofollow">
+                                    <i class="icon-insta"></i>
+                                </a>
+                            </li>
+                            <li class="product-soc__item">
+                                <a href="/" class="product-soc__link" target="_blank" rel="nofollow">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="product-soc__item">
+                                <a href="/" class="product-soc__link" target="_blank" rel="nofollow">
+                                    <i class="icon-google-plus"></i>
+                                </a>
+                            </li>
+                            <li class="product-soc__item">
+                                <a href="/" class="product-soc__link" target="_blank" rel="nofollow">
+                                    <i class="icon-linkedin2"></i>
+                                </a>
+                            </li>
+                            <li class="product-soc__item">
+                                <a href="/" class="product-soc__link" target="_blank" rel="nofollow">
+                                    <i class="icon-pinterest"></i>
+                                </a>
+                            </li>
+                            <li class="product-soc__item">
+                                <a href="/" class="product-soc__link" target="_blank" rel="nofollow">
+                                    <i class="icon-mail2"></i>
+                                </a>
+                            </li>
+                            <li class="product-soc__item">
+                                <a class="product-soc__link" onclick="window.print();">
+                                    <i class="icon-print"></i>
+                                    PRINT!
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="product__content">
             <div class="row m-row">
                 <div class="column col-lg-9 product__column">
                     <div class="product__carousel">
                         <!-- todo foreach items with unique id (images size 870*570) -->
-                        <div class="carousel-cell" id="carousel-cell-1">
+                        <div class="carousel-cell" id="cell-1">
                             <img src="img/product1.png" >
                         </div>
-                        <div class="carousel-cell" id="carousel-cell-2">
+                        <div class="carousel-cell" id="cell-2">
                             <img src="img/product1.png" >
                         </div>
-                        <div class="carousel-cell" id="carousel-cell-3">
+                        <div class="carousel-cell" id="cell-3">
                             <img src="img/product1.png" >
                         </div>
                     </div>
                 </div>
                 <div class="column col-lg-3 product__column">
                     <div class="product-images">
-                        <ul>
-                            <li class="product-images__block">
-
-                                <a href="#carousel-cell-1" class="product-images__link">
-                                    jghjghjgh
-                                    <img src="img/slider-nav1.png" alt="" class="image">
+                        <ul class="product-images__list">
+                            <!-- todo foreach items with link unique id  -->
+                            <li class="product-images__item active">
+                                <a href="#cell-1" class="product-images__link">
+                                    <!-- todo (images size 115*75) -->
+                                    <img src="img/slider-nav1.png" class="image">
                                 </a>
-
+                            </li>
+                            <li class="product-images__item">
+                                <a href="#cell-2" class="product-images__link">
+                                    <img src="img/slider-nav1.png" class="image">
+                                </a>
+                            </li>
+                            <li class="product-images__item">
+                                <a href="#cell-3" class="product-images__link">
+                                    <img src="img/slider-nav1.png" class="image">
+                                </a>
                             </li>
                         </ul>
-
-
-
                     </div>
 
 

@@ -1,5 +1,7 @@
 let product = {
 
+    selectedCell: 0,
+
     slider_options_default: {
         wrapAround: true,
         pageDots: false,
@@ -23,13 +25,23 @@ let product = {
     init: function () {
         this.events();
         this.newSlider('.product__carousel');
-        // this.newSlider('.product__carousel-nav',this.slider_nav);
 
+    },
+
+    updateStatus(carousel){
+        this.selectedCell = carousel.selectedIndex + 1;
+        console.log(carousel.selectedIndex);
+        $('.product-images__item').removeClass('active');
+        $(".product-images__list > li:nth-child(" + this.selectedCell + ")").addClass('active');
     },
 
     newSlider: function (selector, options) {
         options = (options !== undefined) ? Object.assign({}, this.slider_options_default, options) : this.slider_options_default;
         let carousel = new Flickity(document.querySelector(selector), options);
+        console.log(carousel);
+        carousel.on('select', function (e) {
+            product.updateStatus(carousel);
+        });
         return new Flickity(document.querySelector(selector), options);
     },
 
@@ -40,15 +52,20 @@ let product = {
             $(this).parent().find('.product-info__content').slideToggle();
             $(this).find('.product-info__icon').toggleClass('js-active');
         });
-        $('.product-images__link').on('click',function(){
+
+        $('.product-images__item').on('click',function(){
+            $('.product-images__item').removeClass('active');
+            $(this).addClass('active');
            console.log('sadas');
         });
 
 
+
+
+
+
     }
 };
-
-
 
 
 
