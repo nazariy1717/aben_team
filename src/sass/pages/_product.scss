@@ -1,6 +1,33 @@
 @import "../tools/mixins";
 @import "../tools/breakpoints";
 
+.product{
+  padding-top: 60px;
+  &__column{
+    margin-bottom: 30px;
+  }
+  &__carousel{
+    position: relative;
+  }
+}
+
+
+.product-images{
+  padding: 10px;
+  height: 570px;
+  border: solid 1px #ebebeb;
+  &__block{
+    width: 114px;
+    height: 76px;
+    a{
+      display: block;
+      img{
+        position: absolute;
+      }
+    }
+  }
+}
+
 
 
 .product-form{
@@ -215,6 +242,13 @@
     line-height: 50px;
     color: var(--col-black);
     border: solid 1px transparent;
+    @media (max-width: $breakpoint-sm){
+      padding: 0 5px;
+      font-size: 11px;
+      height: 35px;
+      line-height: 35px;
+
+    }
     &.active{
       border: solid 1px #ebebeb;
     }

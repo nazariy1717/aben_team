@@ -115,7 +115,51 @@
     </div>
 </div>
 
+<section class="section product">
 
+    <div class="container">
+        <div class="product__top"></div>
+
+        <div class="product__content">
+            <div class="row m-row">
+                <div class="column col-lg-9 product__column">
+                    <div class="product__carousel">
+                        <!-- todo foreach items with unique id (images size 870*570) -->
+                        <div class="carousel-cell" id="carousel-cell-1">
+                            <img src="img/product1.png" >
+                        </div>
+                        <div class="carousel-cell" id="carousel-cell-2">
+                            <img src="img/product1.png" >
+                        </div>
+                        <div class="carousel-cell" id="carousel-cell-3">
+                            <img src="img/product1.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-lg-3 product__column">
+                    <div class="product-images">
+                        <ul>
+                            <li class="product-images__block">
+
+                                <a href="#carousel-cell-1" class="product-images__link">
+                                    jghjghjgh
+                                    <img src="img/slider-nav1.png" alt="" class="image">
+                                </a>
+
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <section class="section product-form">
     <div class="container">
@@ -601,10 +645,10 @@
 </div>
 
 <script src="js/libs/flickity.pkgd.min.js"></script>
+<script src="js/libs/flickity-hash.js"></script>
 <script src="js/front.js"></script>
 <script src="js/product.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3b1gPEjeBRZJXI5DJyCE4RJl-4PULenI&callback=initMap"></script>
-
 <script type="text/javascript">
     function initMap() {
         let locations = [

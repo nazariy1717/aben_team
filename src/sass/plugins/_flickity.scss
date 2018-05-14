@@ -151,6 +151,48 @@
 }
 
 
+.product__carousel{
+  .flickity-prev-next-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: initial;
+    transform: none;
+    width: 40px;
+    background-image: none;
+    background-color: rgba(0,0,0,0.45);
+    &:after{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 38px;
+      top: 50%;
+      left: 50%;
+      opacity: 0.7;
+      transform: translate(-50%,-50%);
+      @include transition;
+    }
+    &:hover{
+      &:after{
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .flickity-prev-next-button.previous {
+    left: 0;
+    &:after{
+      background: url(../img/app-carousel-prev.png) center no-repeat;
+    }
+  }
+  .flickity-prev-next-button.next {
+    right: 0;
+    &:after{
+      background: url(../img/app-carousel-next.png) center no-repeat;
+    }
+  }
+}
+
 
 
 

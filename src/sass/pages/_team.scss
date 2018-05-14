@@ -74,6 +74,9 @@
         top: 1px;
         margin-right: 5px;
         color: var(--col-battleship-grey);
+        &:before{
+          color: var(--col-battleship-grey);
+        }
       }
       span{
         font-family: 'Open Sans', sans-serif;
