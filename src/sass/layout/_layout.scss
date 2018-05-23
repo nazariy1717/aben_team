@@ -153,3 +153,47 @@
 }
 
 
+.errorPage{
+  background: url(../img/app-slider.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  &__overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.45);
+  }
+  &__content{
+    position: relative;
+    padding: 140px 15px;
+    min-height: 100vh;
+    text-align: center;
+    .btn{
+      margin: auto;
+    }
+    h1{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 120px;
+      font-weight: bold;
+      line-height: normal;
+      color: #fff;
+      margin-bottom: 30px;
+      @media (max-width: $breakpoint-sm){
+        font-size: 90px;
+      }
+    }
+    p{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 30px;
+      @media (max-width: $breakpoint-sm){
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+
