@@ -36,7 +36,15 @@ let front = {
         let slides = parent.getElementsByTagName("input");
         let slide1 = parseFloat( slides[0].value );
         let slide2 = parseFloat( slides[1].value );
-        if( slide1 > slide2 ){ let tmp = slide2; slide2 = slide1; slide1 = tmp; }
+        if( slide1 > slide2 ){
+            slide1 = slide2;
+            slides[0].value = slides[1].value;
+            // let tmp = slide2; slide2 = slide1; slide1 = tmp;
+        }
+        else if (slide2 <= slide1){
+            slide2 = slide1;
+            slides[1].value = slides[0].value;
+        }
         let displayElement = parent.getElementsByClassName("rangeValues")[0];
         displayElement.innerHTML = "$ " + slide1 + " - $ " + slide2;
     },

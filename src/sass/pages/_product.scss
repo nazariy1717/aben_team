@@ -42,6 +42,25 @@
 
   &__column{
     margin-bottom: 30px;
+
+  }
+  &__status{
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    padding: 0px 25px;
+    height: 25px;
+    z-index: 9;
+    line-height: 25px;
+    border-radius: 13px;
+    background-color: #dc3838;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
   }
   &__carousel{
     position: relative;
@@ -208,7 +227,7 @@
   }
   &__item{
     padding: 3px 4px;
-    max-width: 114px;
+    width: 114px;
     display: inline-block;
     position: relative;
     height: 76px;
@@ -223,10 +242,10 @@
       &:after{
         content: '';
         position: absolute;
-        top: 1px;
+        top: 3px;
         right: 0;
         left: 0;
-        bottom: 1px;
+        bottom: -3px;
         border: solid 4px var(--col-battleship-grey);
         @media (max-width: $breakpoint-sm){
           bottom: 12px;
@@ -238,8 +257,15 @@
     }
     a{
       display: block;
+      position: relative;
+      overflow: hidden;
+      height: 76px;
     }
     img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
       pointer-events: none;
     }
   }
