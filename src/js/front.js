@@ -46,7 +46,9 @@ let front = {
             slides[1].value = slides[0].value;
         }
         let displayElement = parent.getElementsByClassName("rangeValues")[0];
-        displayElement.innerHTML = "$ " + slide1 + " - $ " + slide2;
+
+
+        displayElement.innerHTML = "$ " + slide1.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,') + " - $ " + slide2.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
     },
 
     rangeInit: function(){
