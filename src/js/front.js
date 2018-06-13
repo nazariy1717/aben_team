@@ -94,6 +94,10 @@ let front = {
             self.toogleNav();
         });
 
+        $(document).on('click', '#button_filter_show', function () {
+            $('.search_by_lakes').slideToggle();
+        });
+
 
     }
 };
