@@ -78,7 +78,9 @@
     position: absolute;
     left: -15px;
     right: -15px;
-    top: 51px;
+    top: 66px;
+    overflow-y: scroll;
+    height: calc(100vh - 110px);
     background-color: rgba(0,0,0,0.45);
   }
   &__item{
@@ -102,6 +104,9 @@
     &:hover{
       > .sub-menu{
         display: block;
+        @media (max-width: $breakpoint-md){
+          display: none;
+        }
       }
     }
   }
@@ -155,6 +160,48 @@
   }
 }
 
+
+@media (max-width: $breakpoint-md){
+  .drop_down{
+    padding-right: 20px;
+  }
+}
+
+
+.drop-arrow {
+  display: none;
+}
+
+
+@media (max-width: $breakpoint-md){
+  .drop-arrow{
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: -3px;
+    margin-right: -50px;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    &.js-active:after{
+      transform: scale(-1);
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 11px;
+      left: 8px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 5px 0 5px;
+      border-color: #ffffff transparent transparent transparent;
+      @include transition;
+    }
+
+  }
+}
+
 .sub-menu{
   display: none;
   position: absolute;
@@ -162,11 +209,17 @@
   top: 82px;
   padding: 5px 15px;
   background-color: rgba(0, 0, 0, 0.45);
+  &.js-active{
+    display: block!important;
+  }
   @media (max-width: $breakpoint-lg){
     top: 52px;
   }
   @media (max-width: $breakpoint-md){
-    display: none!important;
+    position: initial;
+    width: 300px;
+    margin: auto;
+    background-color: transparent;
   }
   li{
     display: block;

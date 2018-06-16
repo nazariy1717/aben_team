@@ -31,6 +31,8 @@ let front = {
         }
     },
 
+
+
     getVals: function () {
         let parent = this.parentNode;
         let slides = parent.getElementsByTagName("input");
@@ -97,6 +99,12 @@ let front = {
         $(document).on('click', '#button_filter_show', function () {
             $('.search_by_lakes').slideToggle();
         });
+
+        $(document).on('click', '.drop-arrow', function () {
+           $(this).toggleClass('js-active');
+           $('.sub-menu').toggleClass('js-active');
+        });
+
 
 
     }
