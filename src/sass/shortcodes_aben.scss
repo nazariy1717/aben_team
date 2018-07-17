@@ -2,6 +2,17 @@
 
 .aben_shortcodes{
   margin-bottom: 30px;
+
+  .suggest-item:hover {
+    transform: translateY(0);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .bx-slider li{
+    margin-left: 20px;
+    margin-right: 20px!important;
+  }
+
  .panel {
    border-radius: 3px;
  }
@@ -62,6 +73,7 @@
 
 
   .btn-primary{
+    line-height: 45px;
     border: 0;
     background-image: none;
     background-color: var(--col-battleship-grey);
@@ -74,11 +86,11 @@
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    &:hover,&:active{
-      border: 0;
-      outline: none;
+    &:hover,&:active,&:focus{
+      border: 0!important;
+      outline: none!important;
       background-image: none;
-      background-color: var(--col-battleship-grey);
+      background-color: var(--col-battleship-grey)!important;
     }
   }
   .btn-submit-look{
@@ -118,5 +130,32 @@
     margin-bottom: 3px;
     display: block;
     float: left;
+  }
+}
+
+
+.aben_preview_verital{
+  .suggest-item{
+    max-width: 750px;
+  }
+  .suggest-item__img-wrap .image{
+    height: initial;
+  }
+  .aben_antro_specs{
+    margin: 15px 0;
+    span{
+      display: inline-block;
+      padding: 2px 7px;
+      color: #fff;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      background-color: var(--col-battleship-grey);
+      & + & {
+        margin-left: 5px;
+      }
+    }
+  }
+  .aben_offices{
+    font-style: italic;
   }
 }
